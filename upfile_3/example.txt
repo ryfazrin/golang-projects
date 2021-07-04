@@ -1,0 +1,1 @@
+ini adalah file yang diambil dari example.txt

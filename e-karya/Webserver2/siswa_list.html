@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Data Siswa</title>
+	</head>
+	<body>
+			
+		{{ $base := .Data.baseurl}}
+		{{range $k, $v := .Data.karya}}
+			{{Add $k 1}}. {{$v.judul}}<br>
+			 {{$v.isi}} <br> 
+			<a href="{{$base}}/siswa/edit?id={{$v.Id}}">Edit</a> | 
+			<a href="{{$base}}/siswa/delete?id={{$v.Id}}">Delete</a><br>			
+		{{end}}
+		
+		<br><br><a href="{{.Data.baseurl}}siswa/insert">Input Data Siswa</a>
+	</body>
+</html>

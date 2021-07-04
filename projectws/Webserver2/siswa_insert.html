@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert Data Siswa</title>
+	</head>
+	<body>
+		{{if .Data.info}}
+			{{.Data.info}}<br><br>
+		{{end}}
+		
+		<form method="post">
+		Nama <input type="text" name="nama"><br>
+		Nis <input type="text" name="nis"><br>
+		Berat <input type="text" name="berat"><br>
+		Tinggi <input type="text" name="tinggi"><br>	
+		<input type="submit" value="Insert">
+		<a href="{{.Data.baseurl}}siswa/">Back</a>
+		</form>
+	</body>
+</html>

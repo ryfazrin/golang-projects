@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>try_db_2</title>
+</head>
+<body>
+		{{range $k, $v := .Data.karya}}
+			{{Add $k 1}}. {{$v.id}}, {{$v.judul}}, {{$v.isi}} <br> 
+		{{end}}
+</body>
+</html>

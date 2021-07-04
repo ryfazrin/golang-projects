@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <meta charset="utf-8">
+          <title>E-Mask</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=no">
+          <link rel="stylesheet" href="css/bootstrap.css">
+          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.2.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- JavaScript di bawah untuk support Internet Explorer -->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+     </head>
+     <body>
+       <!-- navbar -->
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <ul class="nav nav-pills pull-right">
+            <li class="active" role="presentation"><a href="index.php">Home</a></li>
+            <li role="presentation"><a href="setting.php">Setting</a></li>
+            <li role="presentation"><a href="Logout.php">logout</a></li>
+          </ul>
+      </div>
+    </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- sidebar -->
+    <div class="container">
+    	<div class="list-group col-xs-2">
+    		<a href="#" class="list-group-item active"><span class="badge">69</span>Daftar Karya</a>
+    		<a href="#" class="list-group-item"><span class="badge">412</span>Daftar Anggota</a>
+    		<a href="#" class="list-group-item"><span class="badge">41</span>Laporan Komentar</a>
+    	</div>
+    <!-- end sidebar -->
+
+    <!-- konten utama -->
+    <div class="card">
+      <div class="container col-xs-10">
+        <h1><center>Tambahkan Karya</center></h1>
+        <br>
+        <div class="form-group">
+          Judul : <input type="text" name="judul" class="form-control" placeholder="Judul Karya">
+        </div>
+        <select class="form-control text-center" >
+          <option>-- Category --</option>
+          <option>News</option>
+          <option>Puisi</option>
+          <option>Gambar</option>
+          <option>Video</option>
+        </select>
+        <div class="form-group">
+          Deskripsi : <textarea class="form-control" rows="2" id="Deskripsi"></textarea>
+        </div>
+        <div class="form-group">
+          Isi : <textarea class="form-control" rows="5" id="alamat"> </textarea>
+        </div>
+        <div class="form-group">
+          <input type="file" value="Tambahkan file">
+        </div>
+      </div>
+      <center>
+        <button type="button" class="btn btn-success">Kirim</button>
+        <button type="button" class="btn btn-danger">Batal</button>
+      </center>
+    </div>
+  </div>
+      <!-- footer -->
+      <div class="card-footer text-center navbar-fixed-bottom">
+           <small class="text-muted">Copyright &copy <a href="http://tukarjual.com">TukarJual.Com</a></small>
+      </div>
+     </body>
+</html>
